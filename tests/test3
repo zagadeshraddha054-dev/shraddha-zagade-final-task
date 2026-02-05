@@ -1,0 +1,13 @@
+# test_remove_extra_space_special.py
+
+def remove_extra_space(s):
+    if not isinstance(s, str):
+        raise ValueError("Input must be a string")
+    result = ""
+    for ch in s:
+        if ch != " ":
+            result += ch
+    return result
+
+# Test: Special case
+print(remove_extra_space("  hello   world  "))  # Expected: "helloworld"
