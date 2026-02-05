@@ -31,7 +31,7 @@ def frequency_map(self, text):
     #for word in words:
     # If the word is already in the dictionary, add 1
     # If not, start its count at 1
-    freq[word] = freq.get(word, 0) + 1
+    freq[words] = freq.get(words, 0) + 1
 
     # Return the dictionary with word counts
     return freq

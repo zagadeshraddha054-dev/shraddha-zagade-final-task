@@ -5,8 +5,7 @@ from typing import Any, Dict
 class JsonPreprocessor:
     """
     A helper class to clean and prepare JSON-like data.
-
-    It can:
+     It can:
     - Make all dictionary keys clean and consistent
       (lowercase, no extra spaces, no special characters)
     - Remove keys and values that are None

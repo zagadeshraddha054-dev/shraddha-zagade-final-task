@@ -1,4 +1,4 @@
-# test_remove_extra_space_empty.py
+#test_remove_extra_space_empty.py
 
 def remove_extra_space(s):
     if not isinstance(s, str):

@@ -1,0 +1,16 @@
+# test_remove_extra_space_error.py
+
+def remove_extra_space(s):
+    if not isinstance(s, str):
+        raise ValueError("Input must be a string")
+    result = ""
+    for ch in s:
+        if ch != " ":
+            result += ch
+    return result
+
+# Test: Error handling
+try:
+    remove_extra_space(123)
+except ValueError as e:
+    print("Error:", e)  # Expected: ValueError
