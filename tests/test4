@@ -1,0 +1,13 @@
+# test_remove_extra_space_edge.py
+
+def remove_extra_space(s):
+    if not isinstance(s, str):
+        raise ValueError("Input must be a string")
+    result = ""
+    for ch in s:
+        if ch != " ":
+            result += ch
+    return result
+
+# Test: Edge case
+print(remove_extra_space("     "))  # Expected: ""
