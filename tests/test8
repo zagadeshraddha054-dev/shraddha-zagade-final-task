@@ -1,0 +1,13 @@
+# test_remove_special_characters_special.py
+
+def remove_special_characters(s):
+    if not isinstance(s, str):
+        raise ValueError("Input must be a string")
+    result = ""
+    for ch in s:
+        if ch.isalnum():
+            result += ch
+    return result
+
+# Test: Special case
+print(remove_special_characters("#$%^&*()"))  # Expected: ""
